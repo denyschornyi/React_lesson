@@ -4,12 +4,17 @@ import './App.css';
 const App = () => {
   return (
     <div className="App">
-      <h1>Denys gonna be a profesional in React</h1>
+      <Title />
       <Header />
     </div>
   );
 }
 
+const Title = () => {
+  return (
+    <h1>Denys gonna be a profesional in React</h1>
+  )
+} 
 
 const Header = () => {
   return (
