@@ -1,5 +1,7 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './App.css';
+import Title from './title.js'
+import Header from './header.js';
 
 const App = () => {
   return (
@@ -10,19 +12,4 @@ const App = () => {
   );
 }
 
-const Title = () => {
-  return (
-    <h1>Denys gonna be a profesional in React</h1>
-  )
-} 
-
-const Header = () => {
-  return (
-    <ul>
-      <li>Main</li>
-      <li>Content</li>
-      <li>Contact</li>
-    </ul>
-  )
-}
 export default App;
