@@ -3,14 +3,14 @@ import './App.css';
 
 import Header from './components/Header';
 import Nav from './components/Nav';
-import Content from './components/Content'
+import Profile from './components/Profile'
 
 const App = () => {
   return (
     <div className="app-wrapper">
       <Header />
       <Nav />
-      <Content />
+      <Profile />
     </div>
   );
 }
