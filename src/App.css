@@ -10,18 +10,4 @@
   margin: 0 auto;
 }
 
-.nav{
-  grid-area: nav;
-  background-color: red;
-}
-.header{
-  grid-area: header;
-  background-color: green;
-}
-.header img{
-  width: 80px;
-}
-.content{
-  background-color: blue;
-  grid-area: content;
-}
+
