@@ -15,7 +15,6 @@ const Profile = () => {
         </div>
 
         <MyPosts/>
-
     </div>
     );
 }

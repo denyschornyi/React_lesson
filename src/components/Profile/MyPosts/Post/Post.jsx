@@ -2,11 +2,11 @@ import React from 'react';
 
 import classes from  './Post.module.css';
 
-const Post = () => (
+const Post = (props) => (
     <div className={classes.item}>
         <img src="https://pbs.twimg.com/profile_images/1253447818938728449/0CTQOGpR_400x400.jpg" alt="Avatar"/>
-        Post 1
-
+        
+        {props.message}
         <div>
             <span>Like</span>
         </div>
