@@ -15,8 +15,8 @@ const MyPosts  = () => {
             </div>
 
             <div className={classes.posts}>
-                <Post message="Hi, how are you ?"/>
-                <Post message="I'm be a PRO in React, I find a job in September"/>
+                <Post message="Hi, how are you ?" like='3'/>
+                <Post message="I'm be a PRO in React, I find a job in September" like='900'/>
             </div>
         </React.Fragment>
     );
