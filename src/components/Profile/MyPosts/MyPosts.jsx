@@ -7,7 +7,11 @@ const MyPosts  = () => {
         <React.Fragment>
             <div>
                 My posts
-                <div>New posts</div>
+                <div>
+                    New posts
+                    <textarea cols="30" rows="10"></textarea>
+                    <button>Add post</button>
+                </div>
             </div>
 
             <div>
