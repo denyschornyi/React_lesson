@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './MyPosts.module.css';
+import Post from './Post/Post';
 
 const MyPosts  = () => {
     return (
@@ -10,8 +11,7 @@ const MyPosts  = () => {
             </div>
 
             <div>
-                <div className={classes.item}>Post 1</div>
-                <div className={classes.item}>Post 2</div>
+                <Post/>
             </div>
         </React.Fragment>
     );
