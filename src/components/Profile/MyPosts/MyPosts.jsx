@@ -8,13 +8,13 @@ const MyPosts  = () => {
             <div>
                 My posts
                 <div>
-                    New posts
+                    <h1>New posts</h1>
                     <textarea cols="30" rows="10"></textarea>
                     <button>Add post</button>
                 </div>
             </div>
 
-            <div>
+            <div className={classes.posts}>
                 <Post/>
             </div>
         </React.Fragment>
