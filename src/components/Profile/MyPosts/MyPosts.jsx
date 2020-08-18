@@ -4,13 +4,13 @@ import Post from './Post/Post';
 
 const MyPosts  = () => {
     return (
-        <React.Fragment>
+        <div className={classes.myPostsBlock}>
             <div>
-                My posts
+                <h3></h3>
                 <div>
                     <h1>New posts</h1>
-                    <textarea cols="30" rows="10"></textarea>
-                    <button>Add post</button>
+                    <div><textarea cols="30" rows="3"></textarea></div>
+                    <div><button>Add post</button></div>
                 </div>
             </div>
 
@@ -18,7 +18,7 @@ const MyPosts  = () => {
                 <Post message="Hi, how are you ?" like='3'/>
                 <Post message="I'm be a PRO in React, I find a job in September" like='900'/>
             </div>
-        </React.Fragment>
+        </div>
     );
 }
 
