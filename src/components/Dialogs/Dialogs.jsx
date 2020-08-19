@@ -30,12 +30,8 @@ const Dialogs = (props) => {
     return (
         <div className={classes.dialogs}>
             <div className={classes.dialogsItems}>
-                 <DialogItem name="Denys" id="1"/>
-                <DialogItem name="Daria" id="2"/>
-                <DialogItem name="Maria" id="3"/>
-                <DialogItem name="Artemus" id="4"/>
-                <DialogItem name="Vova" id="5"/>
-                <DialogItem name="Alex" id="6"/>
+                <DialogItem name={dialogData[0].name} id={dialogData[0].id}/>
+                <DialogItem name={dialogData[1].name} id={dialogData[1].id}/>
             </div>
             <div className={classes.messages}>
                 <MessageItem message='Hi'/>
