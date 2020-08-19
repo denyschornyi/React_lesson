@@ -9,6 +9,8 @@ const MyPosts  = () => {
         {id: 2, postMessage: 'I ll be a PRO in React', like: 900}
     ];
 
+    let postElements = postData.map(post => <Post message={post.postMessage} like={post.like}/>)
+
     return (
         <div className={classes.myPostsBlock}>
             <div>
