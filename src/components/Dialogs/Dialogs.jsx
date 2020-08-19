@@ -17,10 +17,20 @@ const MessageItem = (props) => {
 }
 
 const Dialogs = (props) => {
+
+    let dialogData = [
+        {id: 1, name: 'Denys'},
+        {id: 2, name: 'Daria'},
+        {id: 3, name: 'Maria'},
+        {id: 4, name: 'Artemus'},
+        {id: 5, name: 'Vova'},
+        {id: 6, name: 'Alex'},
+    ];
+
     return (
         <div className={classes.dialogs}>
             <div className={classes.dialogsItems}>
-                <DialogItem name="Denys" id="1"/>
+                 <DialogItem name="Denys" id="1"/>
                 <DialogItem name="Daria" id="2"/>
                 <DialogItem name="Maria" id="3"/>
                 <DialogItem name="Artemus" id="4"/>
