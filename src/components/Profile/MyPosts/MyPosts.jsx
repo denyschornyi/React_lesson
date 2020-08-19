@@ -23,8 +23,7 @@ const MyPosts  = () => {
             </div>
 
             <div className={classes.posts}>
-                <Post message={postData[0].postMessage} like={postData[0].like}/>
-                <Post message={postData[1].postMessage} like={postData[1].like}/>
+                {postElements}
             </div>
         </div>
     );
