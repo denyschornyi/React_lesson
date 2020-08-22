@@ -23,7 +23,7 @@ const App = (props) => {
           <Route path='/music' component={Music}/>
           <Route path='/settings' component={Settings}/> */}
           <Route exaxt path='/dialogs' render={() => <Dialogs dialogData={props.dialogData} messageData={props.messageData}/>}/>
-          <Route path='/profile' render={() => <Profile/>}/>
+          <Route path='/profile' render={() => <Profile postData={props.postData}/>}/>
           <Route path='/news' render={() => <News/>}/>
           <Route path='/music' render={() => <Music/>}/>
           <Route path='/settings' render={() => <Settings/>}/>

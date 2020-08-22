@@ -20,10 +20,15 @@ let messageData = [
   {id: 3, message: 'Are you already a PRO in React?'}
 ];
 
+let postData = [
+  {id: 1, postMessage: 'How you doing?', like: 3},
+  {id: 2, postMessage: 'I ll be a PRO in React', like: 900}
+];
+
 ReactDOM.render(
 
   <React.StrictMode>
-    <App dialogData={dialogData} messageData={messageData} />
+    <App dialogData={dialogData} messageData={messageData} postData={postData} />
   </React.StrictMode>,
   document.getElementById('root')
 );
