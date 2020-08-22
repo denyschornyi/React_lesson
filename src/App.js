@@ -10,24 +10,7 @@ import News from './components/News/News';
 import Music from './components/Music/Music';
 import Settings from './components/Settings/Settings';
 
-const App = () => {
-
-  let dialogData = [
-    {id: 1, name: 'Denys'},
-    {id: 2, name: 'Daria'},
-    {id: 3, name: 'Maria'},
-    {id: 4, name: 'Artemus'},
-    {id: 5, name: 'Vova'},
-    {id: 6, name: 'Alex'},
-];
-
-
-let messageData = [
-    {id: 1, message: 'Hi'},
-    {id: 2, message: 'How are you?'},
-    {id: 3, message: 'Are you already a PRO in React?'}
-];
-
+const App = (props) => {
   return (
     <BrowserRouter>
       <div className="app-wrapper">
@@ -39,7 +22,7 @@ let messageData = [
           <Route path='/news' component={News}/>
           <Route path='/music' component={Music}/>
           <Route path='/settings' component={Settings}/> */}
-          <Route exaxt path='/dialogs' render={() => <Dialogs dialogData={dialogData} messageData={messageData}/>}/>
+          <Route exaxt path='/dialogs' render={() => <Dialogs dialogData={props.dialogData} messageData={props.messageData}/>}/>
           <Route path='/profile' render={() => <Profile/>}/>
           <Route path='/news' render={() => <News/>}/>
           <Route path='/music' render={() => <Music/>}/>
