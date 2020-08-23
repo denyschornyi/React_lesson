@@ -5,7 +5,7 @@ let state = {
       {id: 2, postMessage: 'I ll be a PRO in React', like: 900}
   ]
   },
-  messagePage: {
+  dialogPage: {
     dialogData: [
       {id: 1, name: 'Denys'},
       {id: 2, name: 'Daria'},
