@@ -12,6 +12,15 @@
 }
 .dialog a{
     text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.dialog img{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .active{

@@ -7,12 +7,12 @@ let state = {
   },
   dialogPage: {
     dialogData: [
-      {id: 1, name: 'Denys'},
-      {id: 2, name: 'Daria'},
-      {id: 3, name: 'Maria'},
-      {id: 4, name: 'Artemus'},
-      {id: 5, name: 'Vova'},
-      {id: 6, name: 'Alex'},
+      {id: 1, name: 'Denys', img: 'https://lh3.googleusercontent.com/proxy/g-9OuaQvncbMjtHnNWu7riFqhYnAAgJVgZ3kR_yc-KiBrmdSvaOwD2IaqvdNFlUHkOJouRgEVcvo-UPiM0Owqp5bxuxak30bn_86AsATYQA4AsFsu6x7_g'},
+      {id: 2, name: 'Daria', img: 'https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/girl_avatar_child_kid-512.png'},
+      {id: 3, name: 'Maria', img: 'https://cnet2.cbsistatic.com/img/liJ9UZA87zs1viJiuEfVnL7YYfw=/940x0/2020/05/18/5bac8cc1-4bd5-4496-a8c3-66a6cd12d0cb/fb-avatar-2.jpg'},
+      {id: 4, name: 'Artemus', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQKr-4_3JHSaiKkrTwXGXdRXkpl5dl2o7EaGg&usqp=CAU'},
+      {id: 5, name: 'Vova', img: 'https://static.toiimg.com/photo/76729750.cms'},
+      {id: 6, name: 'Alex', img: 'https://lh3.googleusercontent.com/proxy/g-9OuaQvncbMjtHnNWu7riFqhYnAAgJVgZ3kR_yc-KiBrmdSvaOwD2IaqvdNFlUHkOJouRgEVcvo-UPiM0Owqp5bxuxak30bn_86AsATYQA4AsFsu6x7_g'},
     ],
     messageData: [
       {id: 1, message: 'Hi'},
