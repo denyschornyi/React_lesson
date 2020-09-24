@@ -20,7 +20,16 @@ let state = {
       {id: 3, message: 'Are you already a PRO in React?'}
     ]
   }
+}
 
+export const addPost = (postMessageData) => {
+  let newPost = {
+    id: 3,
+    postMessage: postMessageData,
+    like: 0
+  };
+
+  state.profilePage.postData.push(newPost);
 }
 
 export default state;
