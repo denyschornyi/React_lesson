@@ -9,8 +9,7 @@ const MyPosts  = (props) => {
     const newPost = React.createRef();
 
     const addPostData = () => {
-        const text = newPost.current.value;
-        props.addPost(text);
+        props.addPost();
     }
 
     const onChangeHandler = () => {

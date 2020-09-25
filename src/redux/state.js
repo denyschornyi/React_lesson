@@ -21,14 +21,15 @@ let state = {
       {id: 1, message: 'Hi'},
       {id: 2, message: 'How are you?'},
       {id: 3, message: 'Are you already a PRO in React?'}
-    ]
+    ],
+    newMessage: ''
   }
 }
 
-export const addPost = (postMessageData) => {
+export const addPost = () => {
   let newPost = {
     id: 3,
-    postMessage: postMessageData,
+    postMessage: state.profilePage.newPostText,
     like: 0
   };
 
@@ -41,6 +42,22 @@ export const addPost = (postMessageData) => {
 export const updateNewPostText = (postTextData) => {
 
   state.profilePage.newPostText = postTextData;
+  rerenderEntireTree(state);
+}
+
+export const addMessage = () => {
+  let newMessage = {
+    id: 4,
+    message: state.dialogPage.newMessage
+  }
+
+  state.dialogPage.messageData.push(newMessage);
+  rerenderEntireTree(state);
+  state.dialogPage.newMessage = '';
+}
+
+export const updateNewMessage = (updatedMessageText) => {
+  state.dialogPage.newMessage = updatedMessageText;
   rerenderEntireTree(state);
 }
 
