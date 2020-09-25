@@ -5,7 +5,8 @@ let state = {
     postData: [
       {id: 1, postMessage: 'How you doing?', like: 3},
       {id: 2, postMessage: 'I ll be a PRO in React', like: 900}
-  ]
+    ],
+    newPostText: 'Denys will get a React job in October'
   },
   dialogPage: {
     dialogData: [
@@ -32,6 +33,13 @@ export const addPost = (postMessageData) => {
   };
 
   state.profilePage.postData.push(newPost);
+  rerenderEntireTree(state);
+}
+
+
+export const changeNewPostText = (postTextData) => {
+
+  state.profilePage.newPostText = postTextData;
   rerenderEntireTree(state);
 }
 
