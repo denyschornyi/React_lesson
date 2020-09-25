@@ -5,13 +5,13 @@ import './index.css';
 import App from './App';
 
 import {addPost} from './redux/state';
-import {changeNewPostText} from './redux/state';
+import {updateNewPostText} from './redux/state';
 
 export let rerenderEntireTree = (props) => {
   ReactDOM.render(
     <React.StrictMode>
       <BrowserRouter>
-        <App state={props} addPost={addPost} changeNewPostText={changeNewPostText}/>
+        <App state={props} addPost={addPost} updateNewPostText={updateNewPostText}/>
       </BrowserRouter>
     </React.StrictMode>,
     document.getElementById('root')

@@ -14,8 +14,9 @@ const MyPosts  = (props) => {
         newPost.current.value = '';
     }
 
-    const onChangeHandler = (e) => {
-        props.changeNewPostText(e.target.value)
+    const onChangeHandler = () => {
+        const text = newPost.current.value;
+        props.updateNewPostText(text);
     }
 
     return (
