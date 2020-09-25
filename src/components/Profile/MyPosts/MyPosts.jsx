@@ -11,7 +11,6 @@ const MyPosts  = (props) => {
     const addPostData = () => {
         const text = newPost.current.value;
         props.addPost(text);
-        newPost.current.value = '';
     }
 
     const onChangeHandler = () => {

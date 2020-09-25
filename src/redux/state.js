@@ -33,6 +33,7 @@ export const addPost = (postMessageData) => {
   };
 
   state.profilePage.postData.push(newPost);
+  state.profilePage.newPostText = '';
   rerenderEntireTree(state);
 }
 
