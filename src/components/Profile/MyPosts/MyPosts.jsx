@@ -10,9 +10,9 @@ const MyPosts  = (props) => {
     const newPost = React.createRef();
 
     const addPostData = () => {
-        debugger;
         const text = newPost.current.value;
         props.addPost(text);
+        newPost.current.value = '';
     }
 
     return (
