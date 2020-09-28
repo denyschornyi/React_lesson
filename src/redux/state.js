@@ -77,4 +77,12 @@ export default store;
 
 export const addPostActionCreator = () => ({type: ADD_POST});
 
-export const onChangeHandlerActionCreator = (text) => ({type: UPDATE_NEW_POST_TEXT, postTextData: text})
+export const onChangeHandlerActionCreator = (text) => ({type: UPDATE_NEW_POST_TEXT, postTextData: text});
+
+export const sendMessageActionCreator = () => {
+  return {type: 'ADD-MESSAGE'};
+}
+
+export const updatedMessageActionCreator = (text) => {
+  return {type: 'UPDATED-MESSAGE-TEXT', updatedMessageText: text }
+}

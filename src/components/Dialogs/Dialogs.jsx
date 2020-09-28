@@ -4,9 +4,9 @@ import DialogItem from './DialogItem/DialogItem';
 import MessageItem from './MessageItem/MessageItem';
 
 import classes from './Dialogs.module.css'
+import {sendMessageActionCreator, updatedMessageActionCreator} from '../../redux/state'
 
 const Dialogs = (props) => {
-    console.log(props);
 
     let dialogElements = props.state.dialogData.map(dialog => <DialogItem name={dialog.name} id={dialog.id} img={dialog.img}/>);
     let messagesElements = props.state.messageData.map(message => <MessageItem message={message.message}/>)
@@ -15,15 +15,12 @@ const Dialogs = (props) => {
     const messageRef = React.createRef();
 
     const sendMessage = () => {
-        // const messageText = messageRef.current.value;
-        // props.addMessage(messageText);
-        props.dispatch({type: 'ADD-MESSAGE'})
+        props.dispatch(sendMessageActionCreator())
     }
 
     const updatedMessage = () => {
         const text = messageRef.current.value;
-        // props.updateNewMessage(text);
-        props.dispatch({type: 'UPDATED-MESSAGE-TEXT', updatedMessageText: text })
+        props.dispatch(updatedMessageActionCreator(text));
     }
 
     return (
