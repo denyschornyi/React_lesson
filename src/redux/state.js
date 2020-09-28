@@ -36,36 +36,6 @@ let store = {
     this._callSubscriber = observer;
   },
 
-  // addPost() {
-  //   let newPost = {
-  //     id: 3,
-  //     postMessage: this._state.profilePage.newPostText,
-  //     like: 0
-  //   }
-  //   this._state.profilePage.postData.push(newPost);
-  //   this._state.profilePage.newPostText = '';
-  //   this._callSubscriber(this._state);
-  // },
-  // updateNewPostText(postTextData) {
-  //   this._state.profilePage.newPostText = postTextData;
-  //   this._callSubscriber(this._state);
-  // },
-  // addMessage() {
-  //   let newMessage = {
-  //     id: 4,
-  //     message: this._state.dialogPage.newMessage
-  //   }
-  
-  //   this._state.dialogPage.messageData.push(newMessage);
-  //   this._callSubscriber(this._state);
-  //   this._state.dialogPage.newMessage = '';
-  // },
-  // updateNewMessage(updatedMessageText) {
-  //   this._state.dialogPage.newMessage = updatedMessageText;
-  //   this._callSubscriber(this._state);
-  // },
-
-
   dispatch(action){
     if(action.type === 'ADD-POST'){
       let newPost = {
