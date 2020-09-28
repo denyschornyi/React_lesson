@@ -1,14 +1,8 @@
 import React from 'react';
 import classes from './MyPosts.module.css';
 import Post from './Post/Post';
+import {addPostActionCreator, onChangeHandlerActionCreator} from '../../../redux/state'
 
-const addPostActionCreator = () => {
-    return {type: 'ADD-POST'};
-}
-
-const onChangeHandlerActionCreator = (text) => {
-    return {type: 'UPDATE-NEW-POST-TEXT', postTextData: text};
-}
 
 const MyPosts  = (props) => {
     
