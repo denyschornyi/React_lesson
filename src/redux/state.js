@@ -1,5 +1,5 @@
-import {profileReducer} from './profile-reducer';
-import {dialogReducer} from './dialog-reducer';
+import profileReducer from './profile-reducer';
+import dialogReducer from './dialog-reducer';
 
 let store = {
   
@@ -40,7 +40,8 @@ let store = {
   },
 
   dispatch(action){
-
+    console.log(profileReducer)
+    console.log(dialogReducer)
     this._state.profilePage = profileReducer(this._state.profilePage, action);
     this._state.dialogPage = dialogReducer(this._state.dialogPage, action);
 
