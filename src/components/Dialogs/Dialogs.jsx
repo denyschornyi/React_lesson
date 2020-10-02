@@ -8,8 +8,11 @@ import {sendMessageActionCreator, updatedMessageActionCreator} from '../../redux
 
 const Dialogs = (props) => {
 
-    let dialogElements = props.state.dialogData.map(dialog => <DialogItem name={dialog.name} id={dialog.id} img={dialog.img}/>);
-    let messagesElements = props.state.messageData.map(message => <MessageItem message={message.message}/>)
+    let dialogElements = props.state.dialogData.map(dialog => 
+                        <DialogItem name={dialog.name} id={dialog.id} img={dialog.img}/>);
+
+    let messagesElements = props.state.messageData.map(message => 
+                        <MessageItem message={message.message}/>)
 
 
     const messageRef = React.createRef();
